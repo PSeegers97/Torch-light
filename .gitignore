@@ -14,9 +14,9 @@ sysinfo.txt
 *.pidb.meta
 
 ###
-# Externe AssetStoreTools*
+# Externe AssetStoreTools
 ###
-Assets/Externe_Assets/
+[Aa]ssets/Externe_Assets/
 *.apk
 
 
