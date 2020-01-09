@@ -29,6 +29,7 @@ public class Flashlight : MonoBehaviour
             }
             else if (mylight.color == Color.red && !flashlightEnabled)
             {
+                mylight.color = Color.white;
                 flashlightEnabled = true;
             }
             else if (mylight.color == Color.red && flashlightEnabled)

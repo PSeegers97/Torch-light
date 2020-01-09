@@ -5,14 +5,25 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public static bool redPowerup=false;
+    public static bool redPowerup=true;
 
+    public Collider myTriggerCollider;
+    public float smooth;
+
+
+
+    public GameObject test;
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
+
+      
+   
+    
+   
     void Update()
     {
         

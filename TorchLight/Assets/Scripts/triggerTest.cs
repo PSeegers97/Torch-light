@@ -7,6 +7,8 @@ public class triggerTest : MonoBehaviour
     // Start is called before the first frame update
     public GameObject mylight;
     float counter=0;
+    public GameObject frontDoor;
+    public GameObject flashlightColor;
     void Start()
     {
         
@@ -21,9 +23,11 @@ public class triggerTest : MonoBehaviour
         counter+= Time.deltaTime;
         
         if (counter > 3) {
-            if (!mylight.activeSelf) { 
-            mylight.SetActive(true);
+            if (!mylight.activeSelf) {
                 PlayerManager.redPowerup = true;
+                 mylight.SetActive(true);
+                frontDoor.transform.Rotate(0, 90.0f, 0, Space.Self);
+                Destroy(this);
               
             }
            
