@@ -16,7 +16,7 @@ sysinfo.txt
 ###
 # Externe AssetStoreTools
 ###
-[Aa]ssets/Externe_Assets/
+[Aa]ssets/Externe_Assets
 *.apk
 
 
