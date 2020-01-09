@@ -17,6 +17,10 @@ sysinfo.txt
 # Externe AssetStoreTools
 ###
 [Aa]ssets/Externe_Assets
+
+### Hospital Assets
+TorchLight/Assets/Hospital
+Hospital.meta
 *.apk
 
 
