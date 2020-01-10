@@ -1,37 +1,26 @@
 ﻿<Properties StartupConfiguration="{1F8B62C5-5A5E-CAAA-135D-7BAFA074DE97}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Cellphone.cs">
-    <Files>
-      <File FileName="Assets/Hospital/Scripts/OpenDoor.cs" Line="28" Column="99" />
-      <File FileName="Assets/Scripts/Cellphone.cs" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TorchLight" expanded="True">
             <Node name="Assets" expanded="True">
+              <Node name="Editor" expanded="True">
+                <Node name="CreateCone.cs" selected="True" />
+              </Node>
               <Node name="Hospital" expanded="True">
                 <Node name="Scripts" expanded="True" />
               </Node>
-              <Node name="Scripts" expanded="True">
-                <Node name="Cellphone.cs" selected="True" />
-              </Node>
+              <Node name="Scripts" expanded="True" />
             </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="TorchLight" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="764976c5-4fd6-4bb8-a22e-3d579ebb1e5f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="53f32957-e777-4109-90fc-a14c70d4bc46" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
