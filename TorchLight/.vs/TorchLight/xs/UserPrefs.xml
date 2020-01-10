@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{1F8B62C5-5A5E-CAAA-135D-7BAFA074DE97}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Hospital/Scripts/OpenDoor.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Hospital/Scripts/Interactions/SearchDestroy.cs">
     <Files>
-      <File FileName="Assets/Scripts/Cellphone.cs" Line="75" Column="14" />
-      <File FileName="Assets/Hospital/Scripts/OpenDoor.cs" Line="23" Column="23" />
+      <File FileName="Assets/Scripts/Cellphone.cs" Line="40" Column="14" />
+      <File FileName="Assets/Hospital/Scripts/OpenDoor.cs" Line="21" Column="89" />
+      <File FileName="Assets/Hospital/Scripts/Interactions/TriggerSound.cs" Line="1" Column="1" />
+      <File FileName="Assets/Hospital/Scripts/Interactions/SearchDestroy.cs" Line="12" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +13,9 @@
             <Node name="Assets" expanded="True">
               <Node name="Hospital" expanded="True">
                 <Node name="Scripts" expanded="True">
-                  <Node name="OpenDoor.cs" selected="True" />
+                  <Node name="Interactions" expanded="True">
+                    <Node name="SearchDestroy.cs" selected="True" />
+                  </Node>
                 </Node>
               </Node>
               <Node name="Oculus" expanded="True">
