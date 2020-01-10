@@ -7,6 +7,8 @@ public class Cellphone : MonoBehaviour
     public float time = 5.0f;
     public AudioClip audioClip;
 
+    private bool enter;
+
     private bool active;
     // Start is called before the first frame update
     void Start()
@@ -22,7 +24,6 @@ public class Cellphone : MonoBehaviour
         if(time > 0)
         {
             time -= Time.deltaTime;
-            Debug.Log("Actual time: "+time);
         }
         else
         {
@@ -30,18 +31,31 @@ public class Cellphone : MonoBehaviour
             {
                 gameObject.GetComponent<AudioSource>().loop = true;
                 gameObject.GetComponent<AudioSource>().Play();
-                Debug.Log("Ring");
                 active = true;
             }
             
         }
 
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryTouchpad) && enter && active)
+        {
+            gameObject.GetComponent<AudioSource>().Stop();
+        }
+
     }
 
-    IEnumerator playRing()
+    void OnTriggerEnter(Collider col)
     {
-        gameObject.GetComponent<AudioSource>().Play();
-        
-        yield return new WaitForSeconds(2);
+        if (col.CompareTag("TorchLight"))
+        {
+            enter = true;
+        }
+    }
+
+    void OnTriggerExit(Collider col)
+    {
+        if (col.CompareTag("TorchLight"))
+        {
+            enter = false;
+        }
     }
 }
