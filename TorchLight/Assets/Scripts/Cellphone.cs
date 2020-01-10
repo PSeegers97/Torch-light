@@ -5,7 +5,10 @@ using UnityEngine;
 public class Cellphone : MonoBehaviour
 {
     public float time = 5.0f;
-    public AudioClip audioClip;
+    public AudioClip laughClip;
+    private AudioSource source;
+
+    private bool hasPlayed;
 
     private bool enter;
 
@@ -14,6 +17,8 @@ public class Cellphone : MonoBehaviour
     void Start()
     {
         active = false;
+        hasPlayed = false;
+        source = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -29,8 +34,8 @@ public class Cellphone : MonoBehaviour
         {
             if (!active)
             {
-                gameObject.GetComponent<AudioSource>().loop = true;
-                gameObject.GetComponent<AudioSource>().Play();
+                source.loop = true;
+                source.Play();
                 active = true;
             }
             
@@ -38,7 +43,8 @@ public class Cellphone : MonoBehaviour
 
         if (OVRInput.GetDown(OVRInput.Button.PrimaryTouchpad) && enter && active)
         {
-            gameObject.GetComponent<AudioSource>().Stop();
+            source.Stop();
+            StartCoroutine(startSoundAfterRing());
         }
 
     }
@@ -56,6 +62,19 @@ public class Cellphone : MonoBehaviour
         if (col.CompareTag("TorchLight"))
         {
             enter = false;
+        }
+    }
+
+    IEnumerator startSoundAfterRing() {
+
+        if (!hasPlayed)
+        {
+            source.clip = laughClip;
+            source.loop = false;
+            source.Play();
+            yield return new WaitForSeconds(source.clip.length);
+            source.Stop();
+            hasPlayed = true;
         }
     }
 }
