@@ -8,12 +8,11 @@ public class Flashlight : MonoBehaviour
     
     public GameObject myLightGO;
     public Light mylight;
-
-    public MeshCollider myCollider;
+    
     // Start is called before the first frame update
     void Start()
     {
-       
+        mylight.color = Color.white;
 
     }
 
@@ -23,41 +22,49 @@ public class Flashlight : MonoBehaviour
 
         if (PlayerManager.redPowerup)
         {
-            if(mylight.color== Color.white)
-            {
-                mylight.color = Color.red;
-            }
-            else if (mylight.color == Color.red && !flashlightEnabled)
+         
+            if (mylight.color == Color.red && !flashlightEnabled)
             {
                 mylight.color = Color.white;
                 flashlightEnabled = true;
+              
             }
             else if (mylight.color == Color.red && flashlightEnabled)
             {
                 flashlightEnabled = false;
+              
+
             }
-            
+            else    if (mylight.color == Color.white)
+                {
+                    mylight.color = Color.red;
+                    flashlightEnabled = true;
+              
+            }
+
         }
         else if(!PlayerManager.redPowerup)
         {
             flashlightEnabled = !flashlightEnabled;
+           
 
-            
         }
-        if (flashlightEnabled)
+        if (!flashlightEnabled)
         {
             myLightGO.SetActive(false);
+           
         }
-        else
+        else if(flashlightEnabled)
         {
             myLightGO.SetActive(true);
+            
         }
     }
 
 
     void Update()
     {
-        if (OVRInput.Get(OVRInput.Button.Back))
+        if (OVRInput.Get(OVRInput.Button.Back) || Input.GetKeyDown(KeyCode.P))
         {
             FlashlightbuttonPressed();
             

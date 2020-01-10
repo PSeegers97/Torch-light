@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public static bool redPowerup=true;
+    public static bool redPowerup=false;
 
     public Collider myTriggerCollider;
     public float smooth;
