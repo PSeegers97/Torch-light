@@ -1,5 +1,11 @@
 ﻿<Properties StartupConfiguration="{1F8B62C5-5A5E-CAAA-135D-7BAFA074DE97}|">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Hospital/Scripts/OpenDoor.cs">
+    <Files>
+      <File FileName="Assets/Hospital/Scripts/Interactions/SearchDestroy.cs" Line="8" Column="24" />
+      <File FileName="Assets/Hospital/Scripts/Interactions/ExitScene.cs" Line="64" Column="39" />
+      <File FileName="Assets/Hospital/Scripts/Interactions/Cellphone.cs" Line="56" Column="39" />
+      <File FileName="Assets/Hospital/Scripts/OpenDoor.cs" Line="56" Column="39" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -7,9 +13,8 @@
             <Node name="Assets" expanded="True">
               <Node name="Hospital" expanded="True">
                 <Node name="Scripts" expanded="True">
-                  <Node name="Interactions" expanded="True">
-                    <Node name="SearchDestroy.cs" selected="True" />
-                  </Node>
+                  <Node name="Interactions" expanded="True" />
+                  <Node name="OpenDoor.cs" selected="True" />
                 </Node>
               </Node>
               <Node name="Scripts" expanded="True" />
