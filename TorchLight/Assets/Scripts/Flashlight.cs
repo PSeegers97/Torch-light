@@ -20,59 +20,116 @@ public class Flashlight : MonoBehaviour
 
     void FlashlightbuttonPressed() {
 
-        if (PlayerManager.redPowerup)
+        if (PlayerManager.greenPowerup && PlayerManager.redPowerup)
         {
-         
+
+            if (mylight.color == Color.green && !flashlightEnabled)
+            {
+                mylight.color = Color.white;
+                flashlightEnabled = true;
+
+            }
+            else if (mylight.color == Color.green && flashlightEnabled)
+            {
+
+                flashlightEnabled = false;
+
+
+            }
+            else if (mylight.color == Color.red)
+            {
+                mylight.color = Color.green;
+
+
+            }
+            else if (mylight.color == Color.white)
+            {
+                mylight.color = Color.red;
+
+
+            }
+
+
+        }
+        else if (PlayerManager.greenPowerup)
+        {
+
+            if (mylight.color == Color.green && !flashlightEnabled)
+            {
+                mylight.color = Color.white;
+                flashlightEnabled = true;
+
+            }
+            else if (mylight.color == Color.green && flashlightEnabled)
+            {
+                flashlightEnabled = false;
+
+
+            }
+            else if (mylight.color == Color.white)
+            {
+                mylight.color = Color.green;
+
+
+            }
+        }
+
+
+        else if (PlayerManager.redPowerup)
+        {
+
             if (mylight.color == Color.red && !flashlightEnabled)
             {
                 mylight.color = Color.white;
                 flashlightEnabled = true;
-              
+
             }
             else if (mylight.color == Color.red && flashlightEnabled)
             {
                 flashlightEnabled = false;
-              
+
 
             }
-            else    if (mylight.color == Color.white)
-                {
-                    mylight.color = Color.red;
-                    flashlightEnabled = true;
-              
+            else if (mylight.color == Color.white)
+            {
+                mylight.color = Color.red;
+                flashlightEnabled = true;
+
             }
 
         }
-        else if(!PlayerManager.redPowerup)
+        else if (!PlayerManager.redPowerup && !PlayerManager.greenPowerup)
         {
             flashlightEnabled = !flashlightEnabled;
-           
+
 
         }
-        if (!flashlightEnabled)
-        {
-            myLightGO.SetActive(false);
-           
+            if (!flashlightEnabled)
+            {
+                myLightGO.SetActive(false);
+
+            }
+            else if (flashlightEnabled)
+            {
+                myLightGO.SetActive(true);
+
+            }
         }
-        else if(flashlightEnabled)
-        {
-            myLightGO.SetActive(true);
-            
-        }
-    }
+    
 
 
     void Update()
     {
         if (OVRInput.Get(OVRInput.Button.Back) || Input.GetKeyDown(KeyCode.P))
         {
-            FlashlightbuttonPressed();
+        FlashlightbuttonPressed();
             
 
 
             
-        }
         }
     }
+}
+    
 
 

@@ -6,6 +6,7 @@ public class PlayerManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public static bool redPowerup=false;
+    public static bool greenPowerup = false;
 
     public Collider myTriggerCollider;
     public float smooth;
