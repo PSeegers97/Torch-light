@@ -202,6 +202,15 @@ public class TriggerManager : MonoBehaviour
                 PlayerManager.greenPowerup = true;
                 transform.parent.gameObject.SetActive(false);
             }
+            else if (this.name == "TreeTrigger")
+            {
+                if (other.GetComponent<Light>().color == Color.green)
+                {
+                    gameObject.GetComponent<AudioSource>().Play();
+                    transform.Find("HinweisTree").gameObject.SetActive(true);
+                    gameObject.SetActive(false);
+                }
+            }
 
 
 
