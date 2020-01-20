@@ -1,10 +1,7 @@
 ﻿<Properties StartupConfiguration="{1F8B62C5-5A5E-CAAA-135D-7BAFA074DE97}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Hospital/Scripts/OpenDoor.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Hospital/Scripts/Interactions/SearchDestroy.cs">
     <Files>
-      <File FileName="Assets/Hospital/Scripts/Interactions/SearchDestroy.cs" Line="8" Column="24" />
-      <File FileName="Assets/Hospital/Scripts/Interactions/ExitScene.cs" Line="64" Column="39" />
-      <File FileName="Assets/Hospital/Scripts/Interactions/Cellphone.cs" Line="56" Column="39" />
-      <File FileName="Assets/Hospital/Scripts/OpenDoor.cs" Line="56" Column="39" />
+      <File FileName="Assets/Hospital/Scripts/Interactions/SearchDestroy.cs" Line="9" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,8 +10,9 @@
             <Node name="Assets" expanded="True">
               <Node name="Hospital" expanded="True">
                 <Node name="Scripts" expanded="True">
-                  <Node name="Interactions" expanded="True" />
-                  <Node name="OpenDoor.cs" selected="True" />
+                  <Node name="Interactions" expanded="True">
+                    <Node name="SearchDestroy.cs" selected="True" />
+                  </Node>
                 </Node>
               </Node>
               <Node name="Scripts" expanded="True" />
@@ -27,7 +25,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="53f32957-e777-4109-90fc-a14c70d4bc46" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c6f52ec0-a60b-4be2-804c-e50cd37f8420" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
