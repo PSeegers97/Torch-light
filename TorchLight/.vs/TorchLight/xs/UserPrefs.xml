@@ -1,8 +1,5 @@
 ﻿<Properties StartupConfiguration="{1F8B62C5-5A5E-CAAA-135D-7BAFA074DE97}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Hospital/Scripts/Interactions/SearchDestroy.cs">
-    <Files>
-      <File FileName="Assets/Hospital/Scripts/Interactions/SearchDestroy.cs" Line="9" Column="12" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
