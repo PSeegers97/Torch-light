@@ -27,6 +27,7 @@ public class Flashlight : MonoBehaviour
             {
                 mylight.color = Color.white;
                 flashlightEnabled = true;
+                PlayerManager.currentLight= Color.white;
 
             }
             else if (mylight.color == Color.green && flashlightEnabled)
@@ -39,12 +40,14 @@ public class Flashlight : MonoBehaviour
             else if (mylight.color == Color.red)
             {
                 mylight.color = Color.green;
+                PlayerManager.currentLight = Color.green;
 
 
             }
             else if (mylight.color == Color.white)
             {
                 mylight.color = Color.red;
+                PlayerManager.currentLight = Color.red;
 
 
             }
@@ -58,6 +61,7 @@ public class Flashlight : MonoBehaviour
             {
                 mylight.color = Color.white;
                 flashlightEnabled = true;
+                PlayerManager.currentLight = Color.white;
 
             }
             else if (mylight.color == Color.green && flashlightEnabled)
@@ -69,6 +73,7 @@ public class Flashlight : MonoBehaviour
             else if (mylight.color == Color.white)
             {
                 mylight.color = Color.green;
+                PlayerManager.currentLight = Color.green;
 
 
             }
@@ -82,6 +87,7 @@ public class Flashlight : MonoBehaviour
             {
                 mylight.color = Color.white;
                 flashlightEnabled = true;
+                PlayerManager.currentLight = Color.white;
 
             }
             else if (mylight.color == Color.red && flashlightEnabled)
@@ -94,6 +100,7 @@ public class Flashlight : MonoBehaviour
             {
                 mylight.color = Color.red;
                 flashlightEnabled = true;
+                PlayerManager.currentLight = Color.red;
 
             }
 
