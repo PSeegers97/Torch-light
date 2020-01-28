@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{1F8B62C5-5A5E-CAAA-135D-7BAFA074DE97}|">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TorchLight" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Hospital" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="Interactions" expanded="True">
+                    <Node name="SearchDestroy.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Scripts" expanded="True" />
+              <Node name="Shader" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c6f52ec0-a60b-4be2-804c-e50cd37f8420" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
