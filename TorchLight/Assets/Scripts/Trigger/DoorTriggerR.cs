@@ -40,6 +40,7 @@ public class DoorTriggerR : MonoBehaviour
 
             if (isKitchenDoor)
             {
+                yield return new WaitForSeconds(2);
                 roterOrbCollider.isTrigger = true;
             }
             yield return new WaitForSeconds(3);
