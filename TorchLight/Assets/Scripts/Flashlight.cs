@@ -8,6 +8,8 @@ public class Flashlight : MonoBehaviour
     
     public GameObject myLightGO;
     public Light mylight;
+
+    public GameObject fireEffect;
     
     // Start is called before the first frame update
     void Start()
@@ -28,6 +30,7 @@ public class Flashlight : MonoBehaviour
                 mylight.color = Color.white;
                 flashlightEnabled = true;
                 PlayerManager.currentLight= Color.white;
+               
 
             }
             else if (mylight.color == Color.green && flashlightEnabled)
@@ -111,6 +114,15 @@ public class Flashlight : MonoBehaviour
 
 
         }
+        if (PlayerManager.currentLight == Color.red &&flashlightEnabled) {
+
+            fireEffect.SetActive(true);
+        }
+        else
+        {
+            fireEffect.SetActive(false);
+        }
+
             if (!flashlightEnabled)
             {
                 myLightGO.SetActive(false);

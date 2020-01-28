@@ -10,6 +10,13 @@ public class TimerButtonTrigger : MonoBehaviour
 
     public Animation openChestAnim;
     public BoxCollider greenOrbCollider;
+
+    public MeshRenderer timerMesh;
+    public MeshRenderer buttonMesh;
+    public GameObject timerText;
+
+    public GameObject paintingMover;
+    public GameObject baumHinweis;
     void Start()
     {
 
@@ -32,13 +39,18 @@ public class TimerButtonTrigger : MonoBehaviour
     {
 
         if (TimerControl.CheckNumber() == 20) {
+            timerMesh.enabled = false;
+            buttonMesh.enabled = false;
+            timerText.SetActive(false);
             successAudio.Play();
            
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(1);
             openChestAnim.Play();
             yield return new WaitForSeconds(2);
             greenOrbCollider.isTrigger = true;
             transform.parent.gameObject.SetActive(false);
+            paintingMover.SetActive(true);
+            baumHinweis.SetActive(true);
 
 
         }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class GreenPowerUpTrigger : MonoBehaviour
 {
     bool isTriggerActive = false;
+    public MeshRenderer myMesh;
     void Start()
     {
 
@@ -25,11 +26,12 @@ public class GreenPowerUpTrigger : MonoBehaviour
 
     IEnumerator ExecuteTriggerAction()
     {
+        myMesh.enabled = false;
         isTriggerActive = false;
         PlayerManager.greenPowerup = true;
         GetComponent<AudioSource>().Play();
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
         transform.parent.gameObject.SetActive(false);
 
 

@@ -84,11 +84,17 @@ public class FinalChallenge : MonoBehaviour
             //Success
             if (progress == 5)
             {
+                myaudio.Play();
+                GetComponent<MeshRenderer>().enabled = false;
+                for (int i = 0; i < mySignals.Length; i++) {
+                    mySignals[i].GetComponent<MeshRenderer>().enabled = false;
+                }
                 doorAnim.SetBool("isOpen_Obj_1",true);
+
                 
                
-                myaudio.Play();
-                yield return new WaitForSeconds(1);
+                
+                yield return new WaitForSeconds(3);
 
                 gameObject.SetActive(false);
             }

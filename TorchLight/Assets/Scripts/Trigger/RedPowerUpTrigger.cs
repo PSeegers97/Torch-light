@@ -5,8 +5,11 @@ using UnityEngine;
 public class RedPowerUpTrigger : MonoBehaviour
 {
     bool isTriggerActive = false;
+
+    public MeshRenderer myMesh;
     void Start()
     {
+        
 
     }
 
@@ -25,11 +28,13 @@ public class RedPowerUpTrigger : MonoBehaviour
 
     IEnumerator ExecuteTriggerAction()
     {
+        GetComponent<BoxCollider>().isTrigger = false;
+        myMesh.enabled = false;
         isTriggerActive = false;
         PlayerManager.redPowerup = true;
         GetComponent<AudioSource>().Play();
         
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(4);
         transform.parent.gameObject.SetActive(false);
 
 

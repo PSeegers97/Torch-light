@@ -8,6 +8,7 @@ public class TreeTrigger : MonoBehaviour
     bool isTriggerActive = false;
     public AudioSource successAudio;
     public GameObject hinweisText;
+    public GameObject letzteEingabe;
     void Start()
     {
 
@@ -32,6 +33,7 @@ public class TreeTrigger : MonoBehaviour
         {
             successAudio.Play();
             hinweisText.SetActive(true);
+            letzteEingabe.SetActive(true);
             yield return new WaitForSeconds(2);
             GetComponent<BoxCollider>().isTrigger = false;
         }

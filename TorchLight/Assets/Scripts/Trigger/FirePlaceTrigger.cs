@@ -8,7 +8,11 @@ public class FirePlaceTrigger : MonoBehaviour
 
     public GameObject fire;
     public GameObject fridgeMover;
+
+    public GameObject timer;
     bool isTriggerActive = false;
+
+    public GameObject summeHinweis;
     void Start()
     {
 
@@ -31,11 +35,15 @@ public class FirePlaceTrigger : MonoBehaviour
     {
         if (PlayerManager.currentLight == Color.red)
         {
+            GetComponent<BoxCollider>().isTrigger = false;
 
             fire.SetActive(true);
             this.GetComponent<AudioSource>().Play();
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(3);
             fridgeMover.SetActive(true);
+            summeHinweis.SetActive(true);
+            timer.SetActive(true);
+      
 
             this.gameObject.SetActive(false);
         }

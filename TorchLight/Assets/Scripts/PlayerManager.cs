@@ -10,12 +10,12 @@ public class PlayerManager : MonoBehaviour
 
     public static Color currentLight=Color.white;
 
-    public Collider myTriggerCollider;
-    public float smooth;
+    
+  
 
 
 
-    public GameObject test;
+    
     void Start()
     {
        
