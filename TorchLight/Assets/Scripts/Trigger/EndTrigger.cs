@@ -9,7 +9,8 @@ public class EndTrigger : MonoBehaviour
     public Animator transition;
     public float transitionTime = 1f;
 
-   
+     public Light mylight;
+
     void Start()
     {
 
@@ -19,7 +20,7 @@ public class EndTrigger : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         
-       if(other.name== "MY_OVRPlayerController")
+       if(other.name== "MY_OVRPlayerController"||other.name == "OVRPlayerController")
         {
             ChangeScene();
 
@@ -29,6 +30,10 @@ public class EndTrigger : MonoBehaviour
    
     public void ChangeScene()
     {
+        PlayerManager.redPowerup = false;
+        PlayerManager.greenPowerup = false;
+        mylight.color = Color.white;
+
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
        
 

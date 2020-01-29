@@ -5,34 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-<<<<<<< HEAD
-  - enabled: 1
-    path: Assets/Scenes/Hospital.unity
-    guid: 78588f9b41bab4e5a841518428166879
-=======
-  - enabled: 0
-    path: Assets/Oculus/VR/Scenes/GearVrControllerTest.unity
-    guid: d56af3aeb2176e7459f753c1c2e2dd97
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 03a82f0dce66a0b4f8bbf84db3f98051
-  - enabled: 0
-    path: Assets/Externe_Assets/FurnishedCabin/Scenes/Demo.unity
-    guid: 0bce5907d797a4cd8b0660dc119867e8
-  - enabled: 0
-    path: Assets/Externe_Assets/Spooky Forest/forest.unity
-    guid: 6905ad0bce1d37b40b8ab8abf841b1a4
-  - enabled: 0
-    path: Assets/Scenes/Cabin_And_Player.unity
-    guid: e1a2d0486e180c74e8a847f583332eae
-  - enabled: 0
-    path: Assets/Scenes/Demov1.unity
-    guid: 569746877dea5af4f9bb700fc0220a4f
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Demov2.unity
     guid: a03b0680487d98d458099199c2670ed7
->>>>>>> master
+  - enabled: 0
+    path: Assets/Scenes/TimerScene.unity
+    guid: 7d41162df0eb08c42be1133ae523d63c
+  - enabled: 1
+    path: Assets/Scenes/Hospital.unity
+    guid: 78588f9b41bab4e5a841518428166879
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: 127ce7294a79eeb418af68708f7a1bf5
   m_configObjects: {}

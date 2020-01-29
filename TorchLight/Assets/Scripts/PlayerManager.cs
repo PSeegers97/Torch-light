@@ -18,8 +18,11 @@ public class PlayerManager : MonoBehaviour
     
     void Start()
     {
-       
-    }
+    redPowerup = false;
+    greenPowerup = false;
+
+    currentLight = Color.white;
+}
 
     // Update is called once per frame
 

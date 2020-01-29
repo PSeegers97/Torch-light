@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Segment7Standard SDF
   m_EditorClassIdentifier: 
   hashCode: -277605154
-  material: {fileID: 21797591427295678}
+  material: {fileID: 21870082397797580}
   materialHashCode: 80054933
   m_Version: 1.1.0
-  m_SourceFontFileGUID: aade635940b8d4644885746e2792642a
+  m_SourceFontFileGUID: 3457a2eb246bf96439284fe9069d2453
   m_SourceFontFile_EditorRef: {fileID: 0}
   m_SourceFontFile: {fileID: 0}
   m_AtlasPopulationMode: 0
@@ -1771,7 +1771,7 @@ MonoBehaviour:
     m_GlyphIndex: 161
     m_Scale: 1
   m_AtlasTextures:
-  - {fileID: 28508016743811576}
+  - {fileID: 28205730315039788}
   m_AtlasTextureIndex: 0
   m_UsedGlyphRects:
   - m_X: 0
@@ -2319,7 +2319,7 @@ MonoBehaviour:
   m_FallbackFontAssetTable: []
   m_CreationSettings:
     sourceFontFileName: 
-    sourceFontFileGUID: aade635940b8d4644885746e2792642a
+    sourceFontFileGUID: 3457a2eb246bf96439284fe9069d2453
     pointSizeSamplingMode: 0
     pointSize: 73
     padding: 5
@@ -2362,7 +2362,7 @@ MonoBehaviour:
   boldSpacing: 7
   italicStyle: 35
   tabSize: 10
---- !u!21 &21797591427295678
+--- !u!21 &21870082397797580
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -2394,7 +2394,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 28508016743811576}
+        m_Texture: {fileID: 28205730315039788}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTex:
@@ -2463,7 +2463,7 @@ Material:
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.5}
---- !u!28 &28508016743811576
+--- !u!28 &28205730315039788
 Texture2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
